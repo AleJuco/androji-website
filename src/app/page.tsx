@@ -1,0 +1,24 @@
+
+import AboutSection from "@/components/AboutSection/about";
+import ProjectsSection from "@/components/ProjectsSection/projects";
+import ContactSection from "@/components/ContactSection/contact";
+
+
+
+export default function HomePage() {
+  return (
+    <main className="scroll-smooth">
+      <section id="about" className="h-screen bg-gray-200">
+        <AboutSection/>
+      </section>
+
+      <section id="projects" className="h-screen bg-gray-300">
+        <ProjectsSection/>
+      </section>
+
+      <section id="contact" className="h-screen bg-gray-400">
+        <ContactSection/>
+      </section>
+    </main>
+  );
+}
