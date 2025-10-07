@@ -12,7 +12,7 @@ interface ListLinkProps {
 
 const ListLink = (props: ListLinkProps) => (
   <li className="uppercase font-bold px-10 my-3 text-lg text-[#f3f3f3] transform transition-transform duration-400 hover:-translate-y-1 cursor-pointer">
-    <a href={props.href}>{props.children}</a>
+     <a className="nav-underline" href={props.href}>{props.children}</a>
   </li>
 );
 
@@ -21,7 +21,7 @@ const Links = ({ visible }: { visible: boolean }) => (
     className={`flex transition-opacity duration-500 items-center justify-center ${
       visible ? "opacity-100" : "opacity-0"
     } mx-10`}
-  >
+  >gi
     <ListLink href="#home"><Image
               src={chaewon}
               alt="Logo"

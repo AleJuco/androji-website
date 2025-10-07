@@ -11,7 +11,7 @@ export default function HomeSection() {
           <Image
             src={profilephoto}
             alt="Me"
-            className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg radius-full"
+            className="w-full h-100 md:h-100 object-cover rounded-lg shadow-lg radius-full"
           />
         </div>
 
