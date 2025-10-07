@@ -19,6 +19,9 @@ export default function HomeSection() {
         <div className="w-full md:w-2/3 text-center">
           <Text variant="title">hi, i'm <span className="text-[#3972A8]">alejandro</span>, an engineering student at the University of British Columbia</Text>
         </div>
+        <div className="w-full md:w-2/3 text-center">
+          <Text variant="subtitle"> </Text>
+        </div>
       </div>
     </section>
   );

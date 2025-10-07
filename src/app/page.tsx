@@ -15,12 +15,12 @@ export default function HomePage() {
         <HomeSection/>
       </section>
 
-      <section id="skills" className="h-screen bg-gray-300">
-        <SkillsSection/>
-      </section>
-
       <section id="about" className="h-screen bg-gray-200">
         <AboutSection/>
+      </section>
+
+      <section id="skills" className="h-screen bg-gray-300">
+        <SkillsSection/>
       </section>
 
       <section id="projects" className="h-screen bg-gray-300">
