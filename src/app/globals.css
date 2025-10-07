@@ -1,24 +1,56 @@
-@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Onest:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap');
 @import "tailwindcss";
 
 :root {
   --color-mm-grey: #cecece;
+  --color-dblue: #1f202c;
 }
 
 @theme inline {
-  --color-primary: var(--color-grey);
-  --color-primary-foreground: var(--color-grey);
+  --color-primary: var(--color-dblue);
+  --color-primary-foreground: var(--color-dblue);
 
-  --color-secondary: var(--color-mm-grey);
+  --color-secondary: var(--color-dblue);
   --color-secondary-foreground: var(--color-grey);
 }
 
 body {
   background: var(--color-primary);
   color: var(--color-primary-foreground);
-  font-family: "Urbanist", sans-serif;
+  font-family: "funnel-sans-font", sans-serif; 
+  scroll-behavior: smooth;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+/* If you have a fixed navbar, offset anchored scrolling so section headers aren't hidden */
+:root {
+  --navbar-height: 4rem; /* adjust if your navbar is a different height */
+}
+
+html {
+  scroll-padding-top: var(--navbar-height);
+}
+
+.navbar {
+  background: var(--color-dblue);
+  color: var(--color-secondary-foreground);
+  scroll-behavior: smooth;
+}
+
+.google-sans-code-font {
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.funnel-sans-font {
+  font-family: "Funnel Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 40;
+  font-style: normal;
 }

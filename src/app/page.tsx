@@ -1,4 +1,6 @@
 
+import HomeSection from "@/components/HomeSection/home";
+import SkillsSection from "@/components/SkillsSection/skills";
 import AboutSection from "@/components/AboutSection/about";
 import ProjectsSection from "@/components/ProjectsSection/projects";
 import ContactSection from "@/components/ContactSection/contact";
@@ -8,6 +10,15 @@ import ContactSection from "@/components/ContactSection/contact";
 export default function HomePage() {
   return (
     <main className="scroll-smooth">
+
+      <section id="home" className="h-screen">
+        <HomeSection/>
+      </section>
+
+      <section id="skills" className="h-screen bg-gray-300">
+        <SkillsSection/>
+      </section>
+
       <section id="about" className="h-screen bg-gray-200">
         <AboutSection/>
       </section>

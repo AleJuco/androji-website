@@ -1,6 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import chaewon from "@/assets/images/tumblr_70bcd2817e8bdec461f4c56bf5073690_9f40426a_1280.jpg";
 
 interface ListLinkProps {
   href: string;
@@ -8,44 +11,38 @@ interface ListLinkProps {
 }
 
 const ListLink = (props: ListLinkProps) => (
-  <li
-    className="uppercase font-bold ml-8 my-10 text-lg text-[#353535]
-               hover:text-black transform transition-transform duration-400
-               hover:-translate-y-1 cursor-pointer"
-  >
-    <a href={props.href}>
-      {props.children}
-    </a>
+  <li className="uppercase font-bold px-10 my-3 text-lg text-[#f3f3f3] transform transition-transform duration-400 hover:-translate-y-1 cursor-pointer">
+    <a href={props.href}>{props.children}</a>
   </li>
 );
 
 const Links = ({ visible }: { visible: boolean }) => (
   <ul
-    className={`flex transition-opacity duration-500 ${
+    className={`flex transition-opacity duration-500 items-center justify-center ${
       visible ? "opacity-100" : "opacity-0"
-    }`}
+    } mx-10`}
   >
-    <ListLink href="#about">About Me</ListLink>
+    <ListLink href="#home"><Image
+              src={chaewon}
+              alt="Logo"
+              width={96}
+              height={48}
+              className="object-cover rounded-full shadow-lg h-12 w-12"
+            /></ListLink>
+    <ListLink href="#about">About</ListLink>
+    <ListLink href="#skills">Skills</ListLink>
     <ListLink href="#projects">Projects</ListLink>
-    <ListLink href="#contact">Contact Me</ListLink>
+    <ListLink href="#contact">Contact</ListLink>
   </ul>
 );
 
 export default function Navbar() {
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    setVisible(true);
-  }, []);
+  const [visible] = useState(true);
 
   return (
-    <div className="fixed w-full z-50 bg-secondary">
-      <div className="flex items-center justify-between px-6 py-2">
-        <div className="w-24 float-left ml-2.5 pl-2 shrink-0 mb-0.5"></div>
-        <div className="flex gap-9">
+    <div className="fixed w-full bg-secondary">    
           <Links visible={visible} />
-        </div>
-      </div>
+      
     </div>
   );
 }
