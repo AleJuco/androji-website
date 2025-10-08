@@ -1,26 +1,33 @@
 import Image from "next/image";
-import profilephoto from "@/assets/images/IMG_8940_Original.jpg";
+import profilephoto from "@/assets/images/image0.jpg";
 import { Text } from "@/components/Text/Text";
 
 export default function HomeSection() {
   return (
-    <section id="home" className="min-h-screen bg-gray-200 flex items-center">
-      <div className="container mx-auto px-6 py-12 flex flex-col md:flex-col items-center gap-8">
-        {/* Image column */}
-        <div className="w-80 h-80 rounded-full overflow-hidden">
-          <Image
-            src={profilephoto}
-            alt="Me"
-            className="w-full h-100 md:h-100 object-cover rounded-lg shadow-lg radius-full"
-          />
-        </div>
+    <section id="home" className="flex flex-col h-screen">
+      {/* Top hero area with name and image */}
+      <div className="w-full h-full bg-gray-200">
+        <div className="container mx-auto px-6 py-20 flex flex-col items-center gap-8">
+          <div className="w-full md:w-2/3 text-center">
+            <Text variant="title">Alejandro Juco Imperial</Text>
+          </div>
 
-        {/* Text column */}
-        <div className="w-full md:w-2/3 text-center">
-          <Text variant="title">hi, i'm <span className="text-[#3972A8]">alejandro</span>, an engineering student at the University of British Columbia</Text>
+          <div className="w-40 h-40 md:w-72 md:h-72 overflow-hidden">
+            <Image
+              src={profilephoto}
+              alt="Me"
+              width={288}
+              height={288}
+              className="w-full h-full object-cover shadow-lg rounded-full"
+            />
+          </div>
         </div>
-        <div className="w-full md:w-2/3 text-center">
-          <Text variant="subtitle"> </Text>
+      </div>
+
+      {/* Bottom band with different background */}
+      <div className="w-full bg-gray-300 py-20">
+        <div className="container mx-auto px-6 text-center">
+          <Text variant="subtitle">engineering student at the University of British Columbia</Text>
         </div>
       </div>
     </section>

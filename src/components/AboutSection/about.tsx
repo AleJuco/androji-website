@@ -4,22 +4,11 @@ import { Text } from "@/components/Text/Text";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="min-h-screen bg-gray-300 flex items-center">
-      <div className="container mx-auto px-6 py-12 flex flex-col md:flex-col items-center gap-8">
-        {/* Image column */}
-        <div className="w-64 h-64 rounded-full overflow-hidden">
-          <Image
-            src={profilephoto}
-            alt="Me"
-            className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg radius-full"
-          />
-        </div>
-
-        {/* Text column */}
-        <div className="w-full md:w-1/2 text-center">
-          <Text variant="subtitle">hi, i'm <span className="text-[#3972A8]">alejandro</span>, an engineering student at the University of British Columbia.</Text>
-        </div>
+    <section id="about" className="min-h-screen bg-gray-300 flex flex-col">
+      <div className="text-center py-20 w-full">
+        <Text variant="subtitle">About Me</Text>
       </div>
+
     </section>
   );
 }

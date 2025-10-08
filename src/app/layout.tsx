@@ -18,12 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <body>
+      <body suppressHydrationWarning>
         <Navbar />
-          <main>
-            {children}
-          </main>
-       
+        <main>
+          {children}
+        </main>
 
         <Footer /> 
       </body>

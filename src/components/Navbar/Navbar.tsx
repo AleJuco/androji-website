@@ -21,13 +21,11 @@ const Links = ({ visible }: { visible: boolean }) => (
     className={`flex transition-opacity duration-500 items-center justify-center ${
       visible ? "opacity-100" : "opacity-0"
     } mx-10`}
-  >gi
+  >
     <ListLink href="#home"><Image
               src={chaewon}
               alt="Logo"
-              width={96}
-              height={48}
-              className="object-cover rounded-full shadow-lg h-12 w-12"
+              className="object-cover rounded-full shadow-lg h-8 w-8"
             /></ListLink>
     <ListLink href="#about">About</ListLink>
     <ListLink href="#skills">Skills</ListLink>
