@@ -19,8 +19,8 @@ export default function RootLayout({
   return (
     <html>
       <body suppressHydrationWarning>
-        <Navbar />
-        <main>
+        <Navbar/>
+        <main className="py-16">
           {children}
         </main>
 

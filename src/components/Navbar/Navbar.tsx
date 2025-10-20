@@ -38,7 +38,7 @@ export default function Navbar() {
   const [visible] = useState(true);
 
   return (
-    <div className="fixed w-full bg-secondary">    
+    <div className="z-50 flex items-center justify-center fixed w-full bg-secondary">    
           <Links visible={visible} />
       
     </div>

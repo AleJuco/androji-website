@@ -11,11 +11,11 @@ export default function HomePage() {
   return (
     <main className="scroll-smooth">
 
-      <section id="home" className="h-screen">
+      <section id="home" className="h-screen bg-gray-200">
         <HomeSection/>
       </section>
 
-      <section id="about" className="h-screen bg-gray-200">
+      <section id="about" className="h-screen bg-gray-400">
         <AboutSection/>
       </section>
 

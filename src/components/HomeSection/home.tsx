@@ -4,10 +4,10 @@ import { Text } from "@/components/Text/Text";
 
 export default function HomeSection() {
   return (
-    <section id="home" className="flex flex-col h-screen">
-      {/* Top hero area with name and image */}
-      <div className="w-full h-full bg-gray-200">
-        <div className="container mx-auto px-6 py-20 flex flex-col items-center gap-8">
+    <section id="home" className="flex flex-col ">
+      {/* Top hero area with name and image */} 
+      <div className="w-full h-full bg-gray-200 py-17">
+        <div className="container mx-auto px-6 flex flex-col items-center gap-18">
           <div className="w-full md:w-2/3 text-center">
             <Text variant="title">Alejandro Juco Imperial</Text>
           </div>
@@ -25,7 +25,7 @@ export default function HomeSection() {
       </div>
 
       {/* Bottom band with different background */}
-      <div className="w-full bg-gray-300 py-20">
+      <div className="w-full bg-gray-200 py-20">
         <div className="container mx-auto px-6 text-center">
           <Text variant="subtitle">engineering student at the University of British Columbia</Text>
         </div>
