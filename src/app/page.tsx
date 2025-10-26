@@ -1,9 +1,9 @@
 
-import HomeSection from "@/components/HomeSection/home";
-import SkillsSection from "@/components/SkillsSection/skills";
-import AboutSection from "@/components/AboutSection/about";
-import ProjectsSection from "@/components/ProjectsSection/projects";
-import ContactSection from "@/components/ContactSection/contact";
+import HomeSection from "@/app/HomePage/HomeSection/home";
+import SkillsSection from "@/app/HomePage/SkillsSection/skills";
+import AboutSection from "@/app/HomePage/AboutSection/about";
+import ProjectsSection from "@/app/HomePage/ProjectsSection/projects";
+import ContactSection from "@/app/HomePage/ContactSection/contact";
 
 
 
