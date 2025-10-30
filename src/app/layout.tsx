@@ -20,7 +20,7 @@ export default function RootLayout({
     <html>
       <body suppressHydrationWarning>
         <Navbar/>
-        <main className="py-16">
+        <main>
           {children}
         </main>
 

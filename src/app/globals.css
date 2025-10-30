@@ -2,12 +2,14 @@
 @import "tailwindcss";
 
 :root {
-  --color-mm-grey: #cecece;
+  --color-white: #ffffff;
   --color-dblue: #1f202c;
+  --color-dgrey: #2b2b2b;
+  --color-lgrey: #4e4e4e;
 }
 
 @theme inline {
-  --color-primary: var(--color-dblue);
+  --color-primary: var(--color-white);
   --color-primary-foreground: var(--color-dblue);
 
   --color-secondary: var(--color-dblue);
@@ -22,21 +24,6 @@ body {
 }
 
 html {
-  scroll-behavior: smooth;
-}
-
-/* If you have a fixed navbar, offset anchored scrolling so section headers aren't hidden */
-:root {
-  --navbar-height: 4rem; /* adjust if your navbar is a different height */
-}
-
-html {
-  scroll-padding-top: var(--navbar-height);
-}
-
-.navbar {
-  background: var(--color-dblue);
-  color: var(--color-secondary-foreground);
   scroll-behavior: smooth;
 }
 
