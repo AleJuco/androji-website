@@ -2,44 +2,63 @@
 @import "tailwindcss";
 
 :root {
-  --color-white: #ffffff;
+  --color-white: #838383;
   --color-dblue: #1f202c;
-  --color-dgrey: #2b2b2b;
-  --color-lgrey: #4e4e4e;
+  --color-mm-grey: #d67a7a;
+  --color-lgrey: #616161;
+  --color-dgrey: #222222;
+  --color-paleyellow: #f8f6ef;
 }
 
 @theme inline {
-  --color-primary: var(--color-white);
-  --color-primary-foreground: var(--color-dblue);
+  --color-dgrey: var(--color-dgrey);
+  --color-lgrey: var(--color-lgrey);
+  --color-primary-foreground: var(--color-black);
 
-  --color-secondary: var(--color-dblue);
+  --color-bg1: var(--color-paleyellow);
   --color-secondary-foreground: var(--color-grey);
 }
 
-body {
-  background: var(--color-primary);
-  color: var(--color-primary-foreground);
-  font-family: "funnel-sans-font", sans-serif; 
-  scroll-behavior: smooth;
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-up-1s {
+  animation: fade-up 1s;
+}
+
+.fade-up-1p5s {
+  animation: fade-up 1.5s;
+}
+
+.fade-up-2s {
+  animation: fade-up 2s;
+}
+
+.fade-in {
+  animation: fade-in 0.5s;
 }
 
 html {
   scroll-behavior: smooth;
-}
-
-.google-sans-code-font {
-  font-family: "Google Sans Code", monospace;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
-
-
-.funnel-sans-font {
-  font-family: "Funnel Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 40;
-  font-style: normal;
 }
 
 /* Animated underline for nav links (left-to-right) */

@@ -2,7 +2,7 @@ import { Text } from "../Text/Text";
 
 export default function Footer() {
     return (
-        <div className="items-center justify-center bg-secondary text-center p-4 text-white">
+        <div className="flex items-center justify-center py-10 gap-4 flex-col">
             <Text variant="body">
                 &copy; 2025 Androji. All rights reserved.
             </Text>

@@ -1,14 +1,21 @@
-
-import HomeSection from "@/app/HomePage/HomeSection/home";
+import HomeSection from "@/app/HomePage/TopSection/top";
+import AboutSection from "./HomePage/AboutSection/about";
+import TopSection from "@/app/HomePage/TopSection/top";
 
 export default function HomePage() {
   return (
-    <main className="scroll-smooth">
+    <main className="scroll-smooth bg-bg1">
 
-      <section id="home" className="h-screen bg-gray-200">
-        <HomeSection/>
+      <section id="top" className="h-screen">
+        <TopSection/>
+      </section>
+
+      <section id="about" className="h-screen">
+        <AboutSection/>
       </section>
 
     </main>
   );
 }
+
+
