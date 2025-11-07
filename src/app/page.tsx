@@ -1,6 +1,6 @@
-import HomeSection from "@/app/HomePage/TopSection/top";
 import AboutSection from "./HomePage/AboutSection/about";
 import TopSection from "@/app/HomePage/TopSection/top";
+import ProjectsSection from "./HomePage/ProjectsSection/projects";
 
 export default function HomePage() {
   return (
@@ -14,6 +14,9 @@ export default function HomePage() {
         <AboutSection/>
       </section>
 
+      <section id="projects" className="h-screen">
+        <ProjectsSection/>
+      </section>
     </main>
   );
 }
