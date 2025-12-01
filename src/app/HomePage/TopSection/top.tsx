@@ -1,10 +1,10 @@
 import Image from "next/image";
-import profilephoto from "@/assets/images/image0.jpg";
+import profilephoto from "@/assets/images/IMG_0651.png";
 import { Text } from "@/components/Text/Text";
 import ScrollFadeIn from "@/components/TextEffects/ScrollFadeIn";
 
 export default function TopSection() {
-  return (
+  return ( 
       <div className="w-full h-full bg-bg1 py-40 ">
         <div className="flex flex-col items-center justify-center text-center gap-6">
           
@@ -14,7 +14,7 @@ export default function TopSection() {
               alt="Me"
               width={288}
               height={288}
-              className="w-full h-full object-cover shadow-lg rounded-full"
+              className="w-full h-full object-cover object-center shadow-lg rounded-full"
             />
           </div>
 

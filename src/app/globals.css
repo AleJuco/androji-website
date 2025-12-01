@@ -2,20 +2,23 @@
 @import "tailwindcss";
 
 :root {
-  --color-white: #838383;
-  --color-dblue: #1f202c;
+  --color-white: #ffffff;
+  --color-dblue: #2a2a2a;
   --color-mm-grey: #d67a7a;
-  --color-lgrey: #616161;
+  --color-lgrey: #8f8b8b;
   --color-dgrey: #222222;
   --color-paleyellow: #f8f6ef;
+  
 }
 
 @theme inline {
   --color-dgrey: var(--color-dgrey);
+  --color-dblue: var(--color-dblue);
   --color-lgrey: var(--color-lgrey);
   --color-primary-foreground: var(--color-black);
 
   --color-bg1: var(--color-paleyellow);
+  --color-bgtwo: var(--color-dgrey);
   --color-secondary-foreground: var(--color-grey);
 }
 

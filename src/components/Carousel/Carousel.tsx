@@ -1,10 +1,8 @@
 "use client";
 
 import { useState, ReactNode, useEffect } from "react";
-
-interface CarouselProps {
-  slides: ReactNode[]; // Accepts an array of JSX elements
-}
+import {CarouselProps} from "@/components/Types/types";
+import { ArrowBigRight, ArrowBigLeft } from "lucide-react";
 
 export default function Carousel({ slides }: CarouselProps) {
   const [current, setCurrent] = useState(0);
@@ -13,7 +11,7 @@ export default function Carousel({ slides }: CarouselProps) {
   const prev = () => setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
 
   return (
-    <div className="relative w-full overflow-hidden bg-secondary">
+    <div className="relative w-screen bg-secondary overflow-hidden">
       {/* Slides */}
       <div
         className="flex transition-transform duration-700 ease-in-out"
@@ -33,7 +31,7 @@ export default function Carousel({ slides }: CarouselProps) {
                    bg-black/50 text-white px-4 py-2 rounded-full 
                    transition-transform duration-300 hover:-translate-y-[60%]"
       >
-        ◀
+        <ArrowBigLeft />
       </button>
       <button
         onClick={next}
@@ -41,21 +39,8 @@ export default function Carousel({ slides }: CarouselProps) {
                    bg-black/50 text-white px-4 py-2 rounded-full 
                    transition-transform duration-300 hover:-translate-y-[60%]"
       >
-        ▶
+        <ArrowBigRight />
       </button>
-
-      {/* Dots */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
-        {slides.map((_, i) => (
-          <button
-            key={i}
-            onClick={() => setCurrent(i)}
-            className={`w-3 h-3 rounded-full ${
-              i === current ? "bg-blue-500" : "bg-gray-400"
-            }`}
-          />
-        ))}
-      </div>
     </div>
   );
 }

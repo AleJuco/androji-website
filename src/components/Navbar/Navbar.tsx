@@ -10,7 +10,7 @@ interface ListLinkProps {
 }
 
 const ListLink = (props: ListLinkProps) => (
-  <li className="fade-in uppercase font-bold text-dgrey mx-7 my-2 transform transition-transform duration-400 hover:-translate-y-1 cursor-pointer">
+  <li className="fade-in uppercase font-bold text-white mx-7 my-2 transform transition-transform duration-400 hover:-translate-y-1 cursor-pointer">
      <a className="nav-underline" href={props.href}>{props.children}</a> 
   </li>
 );
@@ -32,7 +32,7 @@ const Links = ({ visible }: { visible: boolean }) => (
     <div className="flex flex-row text-2x1">
       <ListLink href="#about">About</ListLink>
       <ListLink href="#projects">Projects</ListLink>
-      <ListLink href="#skills">Skills</ListLink>
+      <ListLink href="#skills and achievements">Skills and Achievements</ListLink>
       
       <ListLink href="#contact">Contact</ListLink>
     </div>
@@ -44,7 +44,7 @@ export default function Navbar() {
   const [visible] = useState(true);
 
   return (
-    <div className="z-50 flex fixed w-full bg-bg1 border-b-2 border-b-lgrey">    
+    <div className="z-50 flex fixed w-full bg-dblue border-b-2 border-b-white backdrop-blur">    
           <Links visible={visible} />
       
     </div>
